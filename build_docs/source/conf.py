@@ -37,6 +37,10 @@ exclude_patterns = []
 #html_theme = 'alabaster'
 html_theme = 'sphinx_rtd_theme'
 html_theme_options = {
+    'navigation_depth': 2
+}
+
+html_theme_options1 = {
     'logo_only': False,
     'display_version': True,
     'prev_next_buttons_location': 'bottom',
@@ -53,8 +57,8 @@ html_theme_options = {
 
 html_sidebars = {
     '**': [
-        'versioning.html',
-    ],
+        'versions.html'
+    ]
 }
 
 html_static_path = ['_static']

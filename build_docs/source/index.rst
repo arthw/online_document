@@ -7,8 +7,11 @@ Welcome to Online Documents's documentation!
 ============================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
+
+   docs
+   docs/install
 
 
 

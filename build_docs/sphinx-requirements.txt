@@ -5,4 +5,3 @@ recommonmark
 sphinx-markdown-tables
 sphinx-md
 sphinx-autoapi
-sphinx-multiversion
