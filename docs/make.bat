@@ -4,7 +4,7 @@ pushd %~dp0
 
 REM Command file for Sphinx documentation
 
-set SPHINXBUILD=sphinx-multiversion
+#set SPHINXBUILD=sphinx-multiversion
 
 if "%SPHINXBUILD%" == "" (
 	set SPHINXBUILD=sphinx-build

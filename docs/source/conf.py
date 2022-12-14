@@ -29,15 +29,7 @@ extensions = [
 
 templates_path = ['_templates']
 
-html_sidebars = {
-    '**': [
-        'versioning.html',
-    ],
-}
-
 exclude_patterns = []
-
-
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
@@ -57,6 +49,12 @@ html_theme_options = {
     'navigation_depth': -1,
     'includehidden': True,
     'titles_only': False
+}
+
+html_sidebars = {
+    '**': [
+        'versioning.html',
+    ],
 }
 
 html_static_path = ['_static']
