@@ -10,8 +10,8 @@ Welcome to Online Documents's documentation!
    :maxdepth: 1
    :caption: Contents:
 
-   docs
-   docs/install
+   docs/guide.md
+   docs/install/installation.md
 
 
 
