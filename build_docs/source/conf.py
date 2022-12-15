@@ -23,7 +23,6 @@ author = 'Zhang Jianyu'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-        'sphinx_multiversion',
         'recommonmark',
         'sphinx_markdown_tables',
         'sphinx.ext.coverage',
