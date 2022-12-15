@@ -1,3 +1,7 @@
+if [ ! -d env_sphinx ]; then
+    bash pip_set_env.sh
+fi
+source env_sphinx/bin/activate
 
 rm -rf ./source/docs
 #git checkout ./source
