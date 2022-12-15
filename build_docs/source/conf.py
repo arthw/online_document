@@ -3,14 +3,22 @@
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
+import os
+import sys
+sys.path.insert(0, os.path.abspath('../../src/'))
+print(sys.path)
+import version as ver
+
+version= ver.get_version()
+release = version
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'Online Documents'
 copyright = '2022, Zhang Jianyu'
 author = 'Zhang Jianyu'
-release = '0.1'
-version = '0.1'
+#release = '0.1'
+
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
