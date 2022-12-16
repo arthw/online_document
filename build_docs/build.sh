@@ -1,11 +1,14 @@
+
+WORK_DIR=../build_tmp
+rm -rf ${WORK_DIR}
+mkdir -p ${WORK_DIR}
+cp -rf ./* ${WORK_DIR}
+
 if [ ! -d env_sphinx ]; then
     bash pip_set_env.sh
 fi
 source env_sphinx/bin/activate
 
-WORK_DIR=../build_tmp
-rm -rf ${WORK_DIR}
-mkdir -p ${WORK_DIR}
 cd ${WORK_DIR}
 #rm -rf ./source/docs
 #git checkout ./source
