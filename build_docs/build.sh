@@ -28,7 +28,7 @@ git checkout -b gh-pages
 git branch --set-upstream-to=origin/gh-pages gh-pages
 git pull
 git fetch origin
-#git reset --hard origin/gh-pages
+git reset --hard origin/gh-pages
 
 VERSION=`cat source/version.txt`
 DST_FOLDER=../${VERSION}
@@ -50,3 +50,11 @@ git add ${LATEST_FOLDER} ${DST_FOLDER} ../versions.html
 git commit -m "update for ${VERSION}"
 git push origin gh-pages
 
+if [[ $? -eq 0 ]]; then
+  echo "push online documents successfully!"
+else
+  echo "push build online documents fault!"
+  exit 1
+fi
+
+exit 0
