@@ -1,3 +1,7 @@
+if [ ! -d env_sphinx ]; then
+    bash pip_set_env.sh
+fi
+source env_sphinx/bin/activate
 
 rm -rf ./source/docs
 #git checkout ./source
@@ -40,7 +44,7 @@ mkdir -p ${LATEST_FOLDER}
 cp -r ${SRC_FOLDER}/* ${LATEST_FOLDER}
 python update_html.py ${LATEST_FOLDER} ${VERSION}
 
-git add ${LATEST_FOLDER} ${DST_FOLDER} ../versoins.html
+git add ${LATEST_FOLDER} ${DST_FOLDER} ../versions.html
 git commit -m "update for ${VERSION}"
 git push origin gh-pages
 
