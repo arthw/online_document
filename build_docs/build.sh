@@ -3,7 +3,11 @@ if [ ! -d env_sphinx ]; then
 fi
 source env_sphinx/bin/activate
 
-rm -rf ./source/docs
+WORK_DIR=../build_tmp
+rm -rf ${WORK_DIR}
+mkdir -p ${WORK_DIR}
+cd ${WORK_DIR}
+#rm -rf ./source/docs
 #git checkout ./source
 cp -rf ../docs/ ./source
 
@@ -21,7 +25,7 @@ git checkout -b gh-pages
 git branch --set-upstream-to=origin/gh-pages gh-pages
 git pull
 git fetch origin
-git reset --hard origin/gh-pages
+#git reset --hard origin/gh-pages
 
 VERSION=`cat source/version.txt`
 DST_FOLDER=../${VERSION}
