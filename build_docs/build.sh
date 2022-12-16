@@ -17,11 +17,6 @@ else
   exit 1
 fi
 
-GH_PAGE_FOLDER=../gh_pages
-rm -rf ${GH_PAGE_FOLDER}
-mkdir -p ${GH_PAGE_FOLDER}
-
-
 git checkout -b gh-pages
 git branch --set-upstream-to=origin/gh-pages gh-pages
 git pull
