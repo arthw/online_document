@@ -32,6 +32,7 @@ extensions = [
         ]
 
 autoapi_dirs = ['../../src']
+autoapi_root = "autoapi"
 autoapi_add_toctree_entry = False
 autosummary_generate = True
 autoapi_options = ['members',  'show-inheritance',
