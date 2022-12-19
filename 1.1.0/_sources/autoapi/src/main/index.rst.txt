@@ -18,6 +18,7 @@ Functions
    src.main.main
    src.main.test
    src.main.test_1
+   src.main.test_2
 
 
 
@@ -37,6 +38,11 @@ Functions
 
 
 .. py:function:: test_1()
+
+   test for publish
+
+
+.. py:function:: test_2()
 
    test for publish
 
