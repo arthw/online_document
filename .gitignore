@@ -2,4 +2,4 @@
 __pycache__
 build_docs
 build_tmp
-src 
+./src 
