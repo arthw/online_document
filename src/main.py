@@ -18,3 +18,8 @@ def test_1():
     """
     test for publish
     """
+
+def test_2():
+    """
+    test for publish
+    """
