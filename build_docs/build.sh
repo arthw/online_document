@@ -27,20 +27,22 @@ fi
 
 git config --global user.email "zhang.jianyu@outlook.com"
 git config --global user.name "ZhangJianyu"
-
+echo 1
 git checkout -b gh-pages
 git config --global user.email "zhang.jianyu@outlook.com"
 git config --global user.name "ZhangJianyu"
-
+echo 2
 git branch --set-upstream-to=origin/gh-pages gh-pages
 
 git config --global user.email "zhang.jianyu@outlook.com"
 git config --global user.name "ZhangJianyu"
-
+echo 3
 git pull
+echo 4
 git fetch origin
+echo 5
 git reset --hard origin/gh-pages
-
+echo 6
 VERSION=`cat source/version.txt`
 DST_FOLDER=../${VERSION}
 LATEST_FOLDER=../latest
