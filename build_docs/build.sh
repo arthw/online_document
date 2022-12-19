@@ -24,6 +24,10 @@ else
   exit 1
 fi
 
+git config --global user.email "zhang.jianyu@outlook.com"
+git config --global user.name "ZhangJianyu"
+
+
 git checkout -b gh-pages
 git branch --set-upstream-to=origin/gh-pages gh-pages
 git pull
