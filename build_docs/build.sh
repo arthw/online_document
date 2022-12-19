@@ -27,9 +27,9 @@ fi
 
 git config --global user.email "zhang.jianyu@outlook.com"
 git config --global user.name "ZhangJianyu"
-#git checkout -b gh-pages
-git switch gh-pages
-#git branch --set-upstream-to=origin/gh-pages gh-pages
+git checkout -b gh-pages
+#git switch gh-pages
+git branch --set-upstream-to=origin/gh-pages gh-pages
 git pull
 git fetch origin
 git reset --hard origin/gh-pages
@@ -51,7 +51,7 @@ python update_html.py ${LATEST_FOLDER} ${VERSION}
 
 git add ${LATEST_FOLDER} ${DST_FOLDER} ../versions.html
 git commit -m "update for ${VERSION}"
-#git push origin gh-pages
+git push origin gh-pages
 
 if [[ $? -eq 0 ]]; then
   echo "push online documents successfully!"
