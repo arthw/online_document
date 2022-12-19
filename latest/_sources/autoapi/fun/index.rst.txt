@@ -1,0 +1,37 @@
+:orphan:
+
+:py:mod:`fun`
+=============
+
+.. py:module:: fun
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   fun.fun1
+   fun.test1
+
+
+
+.. py:function:: fun1()
+
+   this is fun1() function
+
+   no parameter
+
+
+
+.. py:function:: test1()
+
+   this is test1
+
+   no parameter
+
+

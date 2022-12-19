@@ -1,0 +1,8 @@
+:orphan:
+
+:py:mod:`version`
+=================
+
+.. py:module:: version
+
+
