@@ -13,3 +13,8 @@ def test():
 
     no parameter
     """
+
+def test_1():
+    """
+    test for publish
+    """
