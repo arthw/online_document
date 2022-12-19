@@ -17,6 +17,7 @@ Functions
 
    src.main.main
    src.main.test
+   src.main.test_1
 
 
 
@@ -33,5 +34,10 @@ Functions
    this is test
 
    no parameter
+
+
+.. py:function:: test_1()
+
+   test for publish
 
 
