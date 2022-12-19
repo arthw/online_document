@@ -29,6 +29,9 @@ git config --global user.email "zhang.jianyu@outlook.com"
 git config --global user.name "ZhangJianyu"
 
 git checkout -b gh-pages
+git config --global user.email "zhang.jianyu@outlook.com"
+git config --global user.name "ZhangJianyu"
+
 git branch --set-upstream-to=origin/gh-pages gh-pages
 
 git config --global user.email "zhang.jianyu@outlook.com"
