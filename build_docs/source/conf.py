@@ -28,15 +28,29 @@ extensions = [
         'sphinx.ext.coverage',
         'sphinx.ext.autosummary',
         'sphinx_md',
-        #'autoapi.extension',
+        'autoapi.extension',
         'sphinx.ext.napoleon',
         'sphinx.ext.githubpages',
         'sphinx.ext.autodoc',
         ]
 
+autoapi_dirs = ['../../src']
+autoapi_add_toctree_entry = False
+autosummary_generate = True
+autoapi_options = ['members',  'show-inheritance',
+                   'show-module-summary', 'imported-members', ]
+autoapi_ignore = []
+
 templates_path = ['_templates']
 
+source_suffix = ['.rst', '.md']
+
+# The master toctree document.
+master_doc = 'index'
+
 exclude_patterns = []
+
+pygments_style = 'sphinx'
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
@@ -63,5 +77,5 @@ html_theme_options1 = {
 }
 
 
-html_static_path = ['_static']
+#html_static_path = ['_static']
 
