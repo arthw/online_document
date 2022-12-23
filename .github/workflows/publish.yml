@@ -26,6 +26,8 @@ jobs:
     - name: Merge Switch to gh-pages
       run: |
         echo `pwd`
+        ls
+        cd build_tmp
         VERSION=`cat source/version.txt`
         DST_FOLDER=../${VERSION}
         LATEST_FOLDER=../latest
