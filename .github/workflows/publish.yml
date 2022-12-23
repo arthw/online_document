@@ -12,35 +12,6 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build Online Document
       run: |
-        #git config user.email "zhang.jianyu@outlook.com"
-        #git config user.name "ZhangJianyu"
+        git config --local --get remote.origin.url
         cd build_docs
         bash build.sh
-        
-    - name: Switch to gh-pages
-      uses: actions/checkout@v3      
-      with:
-        ref: gh-pages
-        set-safe-directory: build_tmp
-
-        
-    - name: Merge Switch to gh-pages
-      run: |
-        echo `pwd`
-        ls
-        cd build_tmp
-        VERSION=`cat source/version.txt`
-        DST_FOLDER=../${VERSION}
-        LATEST_FOLDER=../latest
-        SRC_FOLDER=build/html
-
-        rm -rf ${DST_FOLDER}/*
-        mkdir -p ${DST_FOLDER}
-        cp -r ${SRC_FOLDER}/* ${DST_FOLDER}
-
-        python update_html.py ${DST_FOLDER} ${VERSION}
-
-        rm -rf ${LATEST_FOLDER}/*
-        mkdir -p ${LATEST_FOLDER}
-        cp -r ${SRC_FOLDER}/* ${LATEST_FOLDER}
-        python update_html.py ${LATEST_FOLDER} ${VERSION}
