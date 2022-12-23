@@ -26,8 +26,8 @@ else
 fi
 
 if [[ ${TEST} -ne 1 ]]; then
-  git config --global user.email "zhang.jianyu@outlook.com"
-  git config --global user.name "ZhangJianyu"
+  #git config --global user.email "zhang.jianyu@outlook.com"
+  #git config --global user.name "ZhangJianyu"
   git checkout -b gh-pages
   #git switch gh-pages
   git branch --set-upstream-to=origin/gh-pages gh-pages
