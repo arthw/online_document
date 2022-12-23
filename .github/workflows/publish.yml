@@ -18,6 +18,7 @@ jobs:
         bash build.sh
         
     - name: Switch to gh-pages
+    - uses: actions/checkout@v3
       with:
         ref: gh-pages
         
