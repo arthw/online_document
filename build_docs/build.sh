@@ -11,8 +11,6 @@ fi
 source env_sphinx/bin/activate
 
 cd ${WORK_DIR}
-#rm -rf ./source/docs
-#git checkout ./source
 cp -rf ../docs/ ./source
 
 make clean
@@ -26,10 +24,7 @@ else
 fi
 
 if [[ ${TEST} -ne 1 ]]; then
-  #git config --global user.email "zhang.jianyu@outlook.com"
-  #git config --global user.name "ZhangJianyu"
   git checkout -b gh-pages
-  #git switch gh-pages
   git branch --set-upstream-to=origin/gh-pages gh-pages
   git pull
   git fetch origin
