@@ -1,3 +1,4 @@
+TEST=0
 
 WORK_DIR=../build_tmp
 rm -rf ${WORK_DIR}
@@ -49,9 +50,13 @@ mkdir -p ${LATEST_FOLDER}
 cp -r ${SRC_FOLDER}/* ${LATEST_FOLDER}
 python update_html.py ${LATEST_FOLDER} ${VERSION}
 
-git add ${LATEST_FOLDER} ${DST_FOLDER} ../versions.html
-git commit -m "update for ${VERSION}"
-git push origin gh-pages
+if [[ ${TEST} -ne 1 ]]; then
+  git add ${LATEST_FOLDER} ${DST_FOLDER} ../versions.html
+  git commit -m "update for ${VERSION}"
+  git push origin gh-pages
+else
+  echo "Skip push"	
+fi
 
 if [[ $? -eq 0 ]]; then
   echo "push online documents successfully!"
