@@ -6,10 +6,15 @@
 import os
 import sys
 sys.path.insert(0, os.path.abspath('../../src/'))
+
 import version as ver
 
-version= ver.get_version()
+version= ver.__version__
 release = version
+
+with open("version.txt", "w") as f:
+    f.write(version)
+
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
