@@ -25,7 +25,7 @@ fi
 
 if [[ ${TEST} -ne 1 ]]; then
   echo 1
-  git switch -b gh-pages
+  git switch gh-pages
   echo 2
   #git branch --set-upstream-to=origin/gh-pages gh-pages
   echo 3
