@@ -26,6 +26,7 @@ fi
 if [[ ${TEST} -ne 1 ]]; then
   echo 1
   #git config pull.rebase true
+  git config pull.ff only
   git pull
   git checkout -b gh-pages
   echo 2
