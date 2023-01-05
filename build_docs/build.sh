@@ -25,11 +25,12 @@ fi
 
 if [[ ${TEST} -ne 1 ]]; then
   echo 1
-  git checkout -b gh-pages
+  git switch -b gh-pages
   echo 2
-  git branch --set-upstream-to=origin/gh-pages gh-pages
+  #git branch --set-upstream-to=origin/gh-pages gh-pages
   echo 3
-  #git pull
+  git pull
+  echo 11
   git fetch origin
   echo 4
   git reset --hard origin/gh-pages
