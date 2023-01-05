@@ -58,6 +58,7 @@ python update_html.py ${LATEST_FOLDER} ${VERSION}
 if [[ ${TEST} -ne 1 ]]; then
   echo 61
   git config --local --get remote.origin.url
+  git config --global --get remote.origin.url
   echo 62
   git add ${LATEST_FOLDER} ${DST_FOLDER} ../versions.html
   echo 63
