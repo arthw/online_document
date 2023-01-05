@@ -1,0 +1,49 @@
+:orphan:
+
+:py:mod:`src.main`
+==================
+
+.. py:module:: src.main
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   src.main.main
+   src.main.test
+   src.main.test_1
+   src.main.test_2
+
+
+
+.. py:function:: main()
+
+   this is main() function
+
+   no parameter
+
+
+
+.. py:function:: test()
+
+   this is test
+
+   no parameter1.
+
+
+.. py:function:: test_1()
+
+   test for publish
+
+
+.. py:function:: test_2()
+
+   test for publish
+
+

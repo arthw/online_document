@@ -1,0 +1,17 @@
+:orphan:
+
+:py:mod:`src.model`
+===================
+
+.. py:module:: src.model
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   fun/index.rst
+
+

@@ -1,0 +1,40 @@
+:py:mod:`src.model.fun`
+=======================
+
+.. py:module:: src.model.fun
+
+.. autoapi-nested-parse::
+
+   it's for test
+
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   src.model.fun.fun1
+   src.model.fun.test1
+
+
+
+.. py:function:: fun1()
+
+   this is fun1() function
+
+   no parameter
+
+
+
+.. py:function:: test1()
+
+   this is test1
+
+   no parameter
+
+
