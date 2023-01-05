@@ -44,8 +44,6 @@ else
   echo "skip pull gh-pages"
 fi
 
-exit 0
-
 VERSION=`cat source/version.txt`
 DST_FOLDER=../${VERSION}
 LATEST_FOLDER=../latest
