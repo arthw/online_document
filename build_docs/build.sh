@@ -26,6 +26,7 @@ fi
 if [[ ${TEST} -ne 1 ]]; then
   echo 1
   git pull
+  git checkout -b gh-pages
   echo 2
   git branch --set-upstream-to=origin/gh-pages gh-pages
   echo 3
