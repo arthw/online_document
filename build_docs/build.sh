@@ -56,6 +56,8 @@ cp -r ${SRC_FOLDER}/* ${LATEST_FOLDER}
 python update_html.py ${LATEST_FOLDER} ${VERSION}
 
 if [[ ${TEST} -ne 1 ]]; then
+  echo 60
+  git config --list
   echo 61
   git config --local --get remote.origin.url
   git config --global --get remote.origin.url
