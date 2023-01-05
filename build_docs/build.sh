@@ -32,8 +32,9 @@ if [[ ${TEST} -ne 1 ]]; then
   git reset --hard FETCH_HEAD
   git clean -df
 
-  #git fetch origin
-  #git reset --hard origin/gh-pages
+  git fetch origin
+  git reset --hard origin/gh-pages
+  echo 5
 else
   echo "skip pull gh-pages"
 fi
@@ -57,7 +58,9 @@ python update_html.py ${LATEST_FOLDER} ${VERSION}
 if [[ ${TEST} -ne 1 ]]; then
   git add ${LATEST_FOLDER} ${DST_FOLDER} ../versions.html
   git commit -m "update for ${VERSION}"
+  echo 6
   git push origin gh-pages
+  echo 7
 else
   echo "Skip push"	
 fi
