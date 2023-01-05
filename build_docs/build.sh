@@ -24,27 +24,20 @@ else
 fi
 
 if [[ ${TEST} -ne 1 ]]; then
-  echo 1
   git config pull.rebase true
   git pull
   git checkout -b gh-pages
-  echo 2
   git branch --set-upstream-to=origin/gh-pages gh-pages
-  echo 3
   git fetch origin gh-pages
   git reset --hard FETCH_HEAD
   git clean -df
 
-  echo 11
   #git fetch origin
-  echo 4
   #git reset --hard origin/gh-pages
-  echo 5
 else
   echo "skip pull gh-pages"
 fi
 
-exit 0
 VERSION=`cat source/version.txt`
 DST_FOLDER=../${VERSION}
 LATEST_FOLDER=../latest
