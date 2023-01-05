@@ -36,14 +36,15 @@ if [[ ${TEST} -ne 1 ]]; then
   git clean -df
 
   echo 11
-  git fetch origin
+  #git fetch origin
   echo 4
-  git reset --hard origin/gh-pages
+  #git reset --hard origin/gh-pages
   echo 5
 else
   echo "skip pull gh-pages"
 fi
 
+exit 0
 VERSION=`cat source/version.txt`
 DST_FOLDER=../${VERSION}
 LATEST_FOLDER=../latest
