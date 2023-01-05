@@ -1,4 +1,5 @@
 TEST=0
+PUSH_TO=0
 
 WORK_DIR=../build_tmp
 rm -rf ${WORK_DIR}
@@ -55,19 +56,10 @@ mkdir -p ${LATEST_FOLDER}
 cp -r ${SRC_FOLDER}/* ${LATEST_FOLDER}
 python update_html.py ${LATEST_FOLDER} ${VERSION}
 
-if [[ ${TEST} -ne 1 ]]; then
-  echo 60
-  git config --list
-  echo 61
-  git config --local --get remote.origin.url
-  git config --global --get remote.origin.url
-  echo 62
+if [[ ${PUSH_TO} -ne 1 ]]; then
   git add ${LATEST_FOLDER} ${DST_FOLDER} ../versions.html
-  echo 63
   git commit -m "update for ${VERSION}"
-  echo 6
   git push origin gh-pages
-  echo 7
 else
   echo "Skip push"	
 fi
