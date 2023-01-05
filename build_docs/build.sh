@@ -25,14 +25,16 @@ fi
 
 if [[ ${TEST} -ne 1 ]]; then
   echo 1
-  #git config pull.rebase true
-  git config pull.ff only
+  git config pull.rebase true
   git pull
   git checkout -b gh-pages
   echo 2
   git branch --set-upstream-to=origin/gh-pages gh-pages
   echo 3
-  git pull
+  git fetch origin gh-pages
+  git reset --hard FETCH_HEAD
+  git clean -df
+
   echo 11
   git fetch origin
   echo 4
