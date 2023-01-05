@@ -16,3 +16,12 @@ jobs:
         git config --local --get remote.origin.url
         cd build_docs
         bash build.sh
+    - name: push
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./
+        publish_branch: gh-apges
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+       
