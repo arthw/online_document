@@ -56,6 +56,7 @@ cp -r ${SRC_FOLDER}/* ${LATEST_FOLDER}
 python update_html.py ${LATEST_FOLDER} ${VERSION}
 
 if [[ ${TEST} -ne 1 ]]; then
+  git config --local --get remote.origin.url
   git add ${LATEST_FOLDER} ${DST_FOLDER} ../versions.html
   git commit -m "update for ${VERSION}"
   echo 6
