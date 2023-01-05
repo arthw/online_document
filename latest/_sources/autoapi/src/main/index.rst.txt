@@ -34,7 +34,7 @@ Functions
 
    this is test
 
-   no parameter1.
+   no parameter2.
 
 
 .. py:function:: test_1()
