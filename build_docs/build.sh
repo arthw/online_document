@@ -24,11 +24,16 @@ else
 fi
 
 if [[ ${TEST} -ne 1 ]]; then
+  echo 1
   git checkout -b gh-pages
+  echo 2
   git branch --set-upstream-to=origin/gh-pages gh-pages
-  git pull
+  echo 3
+  #git pull
   git fetch origin
+  echo 4
   git reset --hard origin/gh-pages
+  echo 5
 else
   echo "skip pull gh-pages"
 fi
