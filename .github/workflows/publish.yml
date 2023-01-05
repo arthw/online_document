@@ -22,6 +22,4 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./
         publish_branch: gh-apges
-        username: ${{ github.actor }}
-        password: ${{ secrets.GITHUB_TOKEN }}
        
