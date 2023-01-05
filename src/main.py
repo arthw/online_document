@@ -11,7 +11,7 @@ def main():
 def test():
     """this is test
 
-    no parameter.
+    no parameter1.
     """
 
 def test_1():
